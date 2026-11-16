@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_c2s.mk
+    $(LOCAL_DIR)/custom_c2s.mk

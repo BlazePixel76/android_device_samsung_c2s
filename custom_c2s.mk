@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/samsung/c2s/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := c2s
-PRODUCT_NAME := lineage_c2s
+PRODUCT_NAME := custom_c2s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N986B
 PRODUCT_MANUFACTURER := samsung
@@ -45,3 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Define PDA property for camera
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.build.PDA=N986BXXSIHYH3
+
+# PixelOS
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_CALL_RECORDING_SUPPORTED := true
