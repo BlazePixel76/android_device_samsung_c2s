@@ -23,6 +23,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/samsung/c2s/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# PixelOS
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_CALL_RECORDING_SUPPORTED := true
+TARGET_SCREEN_WIDTH := 1440
+
 # Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
@@ -46,6 +51,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.build.PDA=N986BXXSIHYH3
 
-# PixelOS
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_CALL_RECORDING_SUPPORTED := true
