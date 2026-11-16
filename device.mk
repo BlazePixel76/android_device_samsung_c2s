@@ -41,6 +41,10 @@ $(call soong_config_set,samsungCameraVars,extra_ids,52) # ID=52 is telephoto
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4633128672291735937.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4633128672291735937.xml
 
+# AdvancedDisplay (mDNIe screen colour modes)
+PRODUCT_PACKAGES += \
+    AdvancedDisplay
+
 # Overlays 
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
