@@ -8,7 +8,7 @@ Basic   | Specification List
 CPU     | Octa-core 2x2.73 GHz Mongoose M5 & 2x2.50 GHz Cortex-A76 & 4x2.0 GHz Cortex-A55
 Chipset | Samsung Exynos 990
 GPU     | ARM Mali-G77 MP11
-Memory  | 8 GB
+Memory  | 8 / 16 GB
 Shipped Android Version | 10
 Storage | 128, 256, 512 GB
 MicroSD | Up to 1 TB
